@@ -1,53 +1,93 @@
+/* This rule applies styles to the elements with the class name App */
 .App {
+  /* setting the text-align property to center, which centers the text content inside the elements with the class name App. */
   text-align: center;
 }
 
+/* This rule applies styles to elements with the class name App-logo. */
 .App-logo {
+  /*  sets the height to 40vmin, which means the height of the element will be 40% of the viewport's smaller dimension (either the height or the width). */
   height: 40vmin;
+  /* The pointer-events: none; rule ensures that the element does not receive any mouse events, making it non-interactive. */
   pointer-events: none;
 }
 
+/* This is a media query that applies styles to the .App-logo class when the user has not specified a preference for reduced motion. */
 @media (prefers-reduced-motion: no-preference) {
+  /*  it adds an animation called App-logo-spin to elements with the class name App-logo.  */
   .App-logo {
+    /* The animation makes the element rotate 360 degrees continuously over a duration of 20 seconds in a linear manner. */
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* This rule applies styles to elements with the class name App-header. */
 .App-header {
+  /* sets the background color to #282c34, which is a dark shade of gray.  */
   background-color: #282c34;
+  /* sets the minimum height of the element to 100% of the viewport's height, ensuring that the header takes up at least the full height of the viewport */
   min-height: 100vh;
+  /* makes the element a flex container, enabling flexbox layout.  */
   display: flex;
+  /*  stacks its children vertically, */
   flex-direction: column;
+  /*  center the children both horizontally and vertically. */
   align-items: center;
   justify-content: center;
+  
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+/* This rule applies styles to elements with the class name App-link. */
 .App-link {
+  /*sets the text color to #61dafb, which is a bright blue color.  */
   color: #61dafb;
 }
 
+/* This is a keyframes rule that defines the animation called App-logo-spin */
+/*  creating a spinning effect. */
 @keyframes App-logo-spin {
+  /* specifies how the element with the class name App-logo should animate between the from (starting) and to (ending) states.  */
   from {
     transform: rotate(0deg);
   }
+  /* it animates the rotation of the element from 0 degrees to 360 degrees  */
+
   to {
     transform: rotate(360deg);
   }
 }
+
+/*This rule applies styles to elements with the class name list  */
 .list {
+  /* sets the text-align property to left, aligning the text content to the left within the element.  */
   text-align: left;
+  /* rule sets the maximum width of the element to 750 pixels,   */
   max-width: 750px;
+  /* centers the element horizontally within its parent.  */
   margin: auto;
 }
 
+/* This rule applies styles to elements with the class name submit-form. */
 .submit-form {
+  /*sets the max-width to 300px  */
   max-width: 300px;
+ /* centers the element horizontally within its parent using margin: auto;. */
   margin: auto;
 }
 
+/* This rule applies styles to elements with the class name edit-form. */
 .edit-form {
+  /* sets the max-width to 300px  */
   max-width: 300px;
+  /*  centers the element horizontally within its parent using margin: auto;. */
   margin: auto;
 }
+
+/* Summary
+1.the provided CSS code includes styles for various class names used in the React application.
+2. styles the header, logo, and links within the application, and also includes styles for elements with class names like list, submit-form, and edit-form
+3.which seem to be related to forms and lists within the application
+4.CSS uses flexbox (display: flex;) to create a vertically centered header, and it includes a spinning animation for elements with the class name App-logo.
+*/

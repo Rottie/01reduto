@@ -1,0 +1,235 @@
+/* addTutorialStyles.css */
+
+/* Sets the maximum width of the form container to 400 pixels and 
+centers it horizontally using margin: 0 auto. */
+.submit-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Aligns the heading (h4) of the form in the center and adds a bottom margin of 20 pixels. */
+  .submit-form h4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Adds a bottom margin of 15 pixels to create space between form groups (label and input). */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* : Sets the font weight of the form labels to bold. */
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  /* : Styles the form input fields with
+   a width of 100%, 10 pixels padding,
+    a 1-pixel solid border 
+  with a color of #ccc, and 
+  a border radius of 4 pixels. */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /*  Styles the "Success" button with a display of block
+   (full-width button), 
+   10 pixels padding, 
+   a background color of #28a745 (green), 
+   no border, 
+   border radius of 4 pixels,
+    white text color, 
+  bold font weight, and a 
+  cursor pointer on hover. */
+  .btn-success {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /*  Changes the background color of the "Success" button 
+  to #218838 (a darker green) on hover. */
+  .btn-success:hover {
+    background-color: #218838;
+  }
+
+
+  /* tutorial List */
+
+  /* Displays the tutorials list using a flex container and allows the items to wrap to the next line when there's not enough space. */
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /*  Styles each individual tutorial item in the list
+   with a flexible basis of 45% (occupying 45% of the available width), 
+   margin of 10 pixels, padding of 10 pixels,
+    a 1-pixel solid border with a color of #ccc,
+   and a border radius of 4 pixels. */
+  .list-item {
+    flex-basis: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /*  Applies a background color of #f0f0f0 (light gray)
+   to the active tutorial item. */
+  .list-item.active {
+    background-color: #f0f0f0;
+  }
+  
+  /*  Adds a bottom margin of 5 pixels 
+  to the heading (h4) within each tutorial item. */
+  .list-item h4 {
+    margin-bottom: 5px;
+  }
+  
+  /*  Adds a bottom margin of 10 pixels to the paragraph (p) 
+  element within each tutorial item. */
+  .list-item p {
+    margin-bottom: 10px;
+  }
+  
+  /* Creates space at the top of the
+   tutorials list for control elements. */
+  .list-controls {
+    margin-top: 20px;
+  }
+  
+  /*  Adds a right margin of 10 pixels 
+  to input elements within the controls area. */
+  .list-controls input {
+    margin-right: 10px;
+  }
+  
+
+  /* Styles the control buttons with padding of 8 pixels
+   vertically and 12 pixels horizontally, 
+   a background color of #007bff (blue),
+    white text color, no border, 
+  border radius of 4 pixels, and a cursor pointer. */
+  .list-controls button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  /* : Changes the background color of the control buttons
+   to #0056b3 (a darker blue) on hover. */
+  .list-controls button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Tutorial */
+
+  /*  Styles the edit form with
+   a maximum width of 400 pixels,
+   centered horizontally (margin: 0 auto), 
+  padding of 20 pixels,
+   a 1-pixel solid border with a color of #ccc, 
+  and a border radius of 5 pixels. */
+  .edit-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  /* Adds a bottom margin of 10 pixels to the
+   heading (h4) within the edit form. */
+  .edit-form h4 {
+    margin-bottom: 10px;
+  }
+  
+  /*  Styles the labels within the edit form as 
+  block elements with a bottom margin of 5 pixels. */
+  .edit-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Styles the input elements within the edit form with a width of 100%, 8 pixels padding, a bottom margin of 10 pixels, a 1-pixel solid border with a color 
+  of #ccc, and a border radius of 4 pixels. */
+  .edit-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styles elements with the class status
+   to have bold font weight. */
+  .edit-form .status {
+    font-weight: bold;
+  }
+  
+  /* Changes the text color to orange for elements
+   with class status and class pending. */
+  .edit-form .status.pending {
+    color: orange;
+  }
+  
+  /* Changes the text color to green for elements with 
+  class status and class published. */
+  .edit-form .status.published {
+    color: green;
+  }
+  /*  Creates space at the top of the edit form
+   for action elements (buttons). */
+  .edit-form .actions {
+    margin-top: 20px;
+  }
+  
+  /* : Styles the buttons within the edit form with
+   padding of 8 pixels vertically 
+  and 12 pixels horizontally, no border,
+   border radius of 4 pixels, and a cursor pointer. */
+  .edit-form button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* : Styles the primary badge
+   with a background color of #007bff (blue)
+   and white text color. */
+  .edit-form .badge-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Styles the danger badge with 
+  a background color of #dc3545 (red) and
+   white text color. */
+
+  .edit-form .badge-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /*  Styles the success badge with 
+  a background color of #28a745 (green) and 
+  white text color. */
+  .edit-form .badge-success {
+    background-color: #28a745;
+    color: #fff;
+  }

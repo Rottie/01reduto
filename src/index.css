@@ -1,13 +1,54 @@
+/* This rule applies styles to the <body> element of the HTML document. */
 body {
+
+  /* This rule sets the margin of the <body> element to 0, effectively removing any default margin that might be applied by the browser.
+  ensures that there is no extra space between the <body> element and the edges of the browser window.
+   */
   margin: 0;
+  /* This rule sets the font family for the text inside the <body> element 
+  specifies a list of font families in order of preference. 
+   browser will try to apply the first font family and, if not available, move to the next one in the list.
+  The sans-serif at the end of the list serves as a fallback font family in case none of the preferred fonts are available.
+  The list of font families includes various system fonts and common sans-serif fonts that are usually available on most operating systems.  
+  */
+
+  /* The -apple-system and BlinkMacSystemFont are specific to Apple devices (macOS and iOS) and provide a system font for those platforms.
+  The other fonts are commonly used sans-serif fonts that are widely available on different systems.
+
+
+  */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  /* This rule applies a font smoothing technique known as antialiasing to the text rendered in webkit-based browsers (such as Chrome and Safari). 
+  Antialiasing smooths the edges of fonts to improve their appearance, especially at smaller font sizes. It helps to make text look clearer and less jagged.
+  */
   -webkit-font-smoothing: antialiased;
+ /*This rule applies a font smoothing technique known as grayscale antialiasing to the text rendered in Firefox on macOS. 
+ Grayscale antialiasing is similar to regular antialiasing but applies grayscale smoothing, which can have a slightly different effect on font rendering.
+ */
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* This rule applies styles to the <code> elements in the HTML document
+The <code> element represents a fragment of computer code */
 code {
+  /*This rule sets the font family for text inside <code> elements. It specifies a list of font families in order of preference, similar to the font-family rule for the <body> element.
+  The browser will try to apply the first font family and, if not available, move to the next one in the list. The monospace at the end of the list serves as a generic monospaced font family as a fallback.
+  The monospace at the end of the list serves as a generic monospaced font family as a fallback.
+  */
+
+  /* The list of font families includes specific monospaced fonts such as source-code-pro, Menlo, Monaco, Consolas, and 'Courier New', which are commonly used for displaying code blocks
+  onospaced fonts ensure that each character occupies the same amount of horizontal space, which is essential for clear and organized code formatting.
+
+  */
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Summary
+1. the provided CSS code sets font families, font smoothing,
+2. and margins for the <body> element of the HTML document and
+3. also defines font families for the <code> elements used to display code blocks. 
+4.   The rules ensure that text looks clear and consistent across different platforms and browsers.
+*/
